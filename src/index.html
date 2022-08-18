@@ -14,26 +14,32 @@
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li>Продукція</li>
-          <li>Контакти</li>
-          <li>Про нас</li>
-        </ul>
-        <a href="./index.html"
-          ><img
-            src="./images/logo.png"
-            alt="логотип мануфактури м'ясного магазину"
-            width="150"
-        /></a>
-        <ul>
-          <li>Увійти</li>
-          <li>Зареєструватись</li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="container container__header">
+          <a class="manufacture" href="./index.html">MANUFACTURE</a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="">Продукція</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Контакти</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Магазини</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Про нас</a></li>
+          </ul>
+          <!-- <a class="logo" href="./index.html"><img src="./images/logo.png" alt="логотип мануфактури м'ясного магазину"
+              width="150" />
+          </a> -->
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="">Увійти</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Зареєструватись</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">Свіже м'ясо від виробника</h1>
+        </div>
+      </section>
       <section>
         <ul>
           <li>
