@@ -3,34 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>Manufacture</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Alegreya&family=Amatic+SC:wght@700&family=Marck+Script&family=Rye&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./sass/_main.scss" />
+    <link rel="stylesheet" href="./sass/_main.scss"/>
     <script type="module" src="./index.js"></script>
   </head>
   <body>
     <header class="header">
       <div class="container container__header">
-          <a class="manufacture" href="./index.html">MANUFACTURE</a>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link" href="">Продукція</a></li>
-            <li class="nav__item"><a class="nav__link" href="">Контакти</a></li>
-            <li class="nav__item"><a class="nav__link" href="">Магазини</a></li>
-            <li class="nav__item"><a class="nav__link" href="">Про нас</a></li>
+        <a class="manufacture" href="./index.html">MANUFACTURE</a>
+        <nav class="nav mobile__nav">
+          <ul class="nav__list mobile__nav-list">
+            <li class="nav__item mobile__nav-item">
+              <a class="nav__link" href="">Продукція</a>
+            </li>
+            <li class="nav__item mobile__nav-item">
+              <a class="nav__link" href="">Контакти</a>
+            </li>
+            <li class="nav__item mobile__nav-item">
+              <a class="nav__link" href="">Магазини</a>
+            </li>
+            <li class="nav__item mobile__nav-item">
+              <a class="nav__link" href="">Про нас</a>
+            </li>
           </ul>
-          <!-- <a class="logo" href="./index.html"><img src="./images/logo.png" alt="логотип мануфактури м'ясного магазину"
-              width="150" />
-          </a> -->
-          <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link" href="">Увійти</a></li>
-            <li class="nav__item"><a class="nav__link" href="">Зареєструватись</a></li>
+          <ul class="nav__list mobile__nav-list">
+            <li class="nav__item mobile__nav-item">
+              <a class="nav__link" href="">Увійти</a>
+            </li>
+            <li class="nav__item mobile__nav-item">
+              <a class="nav__link" href="">Зареєструватись</a>
+            </li>
           </ul>
+          <button
+            class="menu__burger"
+            type="button"
+            aria-lable="switcher mobile menu"
+            aria-expanded="false"
+          >
+            <svg class="burger__svg" width="40" height="40">
+              <use class="icon__burger-open" href="./images/icons-svg.svg#mobile-burger"></use>
+              <use class="icon__burger-close" href="./images/icons-svg.svg#mobile-close"></use>
+            </svg>
+          </button>
         </nav>
       </div>
     </header>
@@ -43,38 +63,25 @@
       <section>
         <ul>
           <li>
-            <a href="" target="_blank" rel="noopener noreferrer">
-              Свинина
-            </a>
+            <a href="" target="_blank" rel="noopener noreferrer">Свинина</a>
           </li>
           <li>
-            <a href="" target="_blank" rel="noopener noreferrer">
-              Птиця
-            </a>
-          </li>
-          <li><a href="" target="_blank" rel="noopener noreferrer">
-            Риба
-          </a>
+            <a href="" target="_blank" rel="noopener noreferrer">Птиця </a>
           </li>
           <li>
-            <a href="" target="_blank" rel="noopener noreferrer">
-              Овочі
-            </a>
+            <a href="" target="_blank" rel="noopener noreferrer">Риба </a>
           </li>
           <li>
-            <a href="" target="_blank" rel="noopener noreferrer">
-              Яловичина
-            </a>
+            <a href="" target="_blank" rel="noopener noreferrer">Овочі </a>
           </li>
           <li>
-            <a href="" target="_blank" rel="noopener noreferrer">
-              Соління
-            </a>
+            <a href="" target="_blank" rel="noopener noreferrer">Яловичина</a>
           </li>
           <li>
-            <a href="" target="_blank" rel="noopener noreferrer">
-              Своя продукція
-            </a>
+            <a href="" target="_blank" rel="noopener noreferrer">Соління</a>
+          </li>
+          <li>
+            <a href="" target="_blank" rel="noopener noreferrer">Своя продукція</a>
           </li>
         </ul>
       </section>

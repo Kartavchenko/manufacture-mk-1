@@ -3,10 +3,9 @@
 .manufacture {
     font-family: $logoTextFont;
     color: $textMainColor;
-    font-size: 48px;
+    font-size: 34px;
     display: flex;
     justify-content: center;
-    letter-spacing: 0.03em;
     transition: 250ms $cubic;
 
     &:hover,
@@ -16,32 +15,40 @@
     }
 
     @media screen and (min-width: 768px) {
-        letter-spacing: 0.5em;
         padding-top: 20px;
         padding-bottom: 20px;
     }
 }
 
-.nav {
+.container__header {
     display: flex;
-    align-items: center;
+}
+
+.mobile__nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .nav__list {
-    display: flex;
-    align-items: center;
-    margin-right: auto;
-    margin-left: auto;
     font-family: $mainTextFont;
     @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
         margin-right: auto;
         margin-left: auto;
     }
 
-    @media screen and (min-width: 1200px) {
-        margin-right: auto;
-        margin-left: auto;
-    }
+    // @media screen and (min-width: 1200px) {
+    //     margin-right: auto;
+    //     margin-left: auto;
+    // }
 }
 
 .nav__item {
@@ -55,6 +62,13 @@
     }
 }
 
+.mobile__nav-item {
+    @media screen and (max-width: 767px) {
+        border-style: none;
+        padding: 0;
+        margin-right: 0;
+    }
+}
 
 .nav__link {
     color: rgba(154, 154, 154, 0.8) ;
@@ -64,4 +78,10 @@
     &:focus {
         color: rgba(181, 9, 9, 0.8);
     }
+}
+
+.menu__burger {
+    fill: $textMainColor;
+    background-color: transparent;
+    border: none;
 }
