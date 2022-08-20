@@ -15,18 +15,39 @@
     }
 
     @media screen and (min-width: 768px) {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
+        margin-right: 20px;
+    }    
 }
 
 .container__header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    @media screen and (min-width: 768px) {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
 }
 
-.mobile__nav {
-    display: flex;
-    flex-direction: column;
+.mobile-nav {
+    display: none;
+
+    &__list {
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+    }
+
+        &__item {
+            @media screen and (max-width: 767px) {
+                border-style: none;
+                padding: 0;
+                margin-right: 0;
+            }
+        }
+    }
 }
 
 .nav {
@@ -44,29 +65,18 @@
         margin-right: auto;
         margin-left: auto;
     }
-
-    // @media screen and (min-width: 1200px) {
-    //     margin-right: auto;
-    //     margin-left: auto;
-    // }
 }
 
 .nav__item {
-    margin-right: 20px;
-    border-right: 1 solid rgba(154, 154, 154, 0.7);
-    padding-right: 20px;
+    @media screen and (min-width:768px) {
+        margin-right: 20px;
+        border-right: 1 solid rgba(154, 154, 154, 0.7);
+        padding-right: 20px;
 
-    &:last-child {
-        margin-right: 0;
-        border-right: none;
-    }
-}
-
-.mobile__nav-item {
-    @media screen and (max-width: 767px) {
-        border-style: none;
-        padding: 0;
-        margin-right: 0;
+        &:last-child {
+                margin-right: 0;
+                border-right: none;
+            }
     }
 }
 
@@ -80,8 +90,43 @@
     }
 }
 
-.menu__burger {
-    fill: $textMainColor;
-    background-color: transparent;
-    border: none;
+.menu-burger {
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+    @media screen and (max-width:768px) {
+        fill: $textMainColor;
+            background-color: transparent;
+            border: none;
+    }
+}
+
+.is-open.mobile-nav {
+    @media screen and (max-width: 768px) {
+        display: flex;
+    }
+}
+
+.mobile-menu.is-open {
+    @media screen and (max-width: 767px) {
+        position: fixed;
+        transition-duration: 300ms;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(163, 110, 110);
+    }
+}
+
+.is-open .burger-icon__open {
+    opacity: 0;
+}
+
+.burger-icon__close {
+    opacity: 0;
+}
+
+.is-open .burger-icon__close {
+    opacity: 1;
 }
